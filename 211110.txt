@@ -1,16 +1,33 @@
-뷰의 핵심 기능 reactivity - 데이터의 변화를 라이브러리에서 감지해서 알아서 화면을 자동으로 그려주는 것
+같은 레벨에서의 컴포넌트 간 통신 방법
+-상위 레벨로 event emit으로 전달 후 하위 레벨로 props로 내려준다.
 
+뷰 라우터
+- 싱글 페이지 앱을 쉽게 만들 수 있도록 여러 기능이 포함된 vue 공식 라이브러리
+- 네비게이션 가드 : 특정 URL에 접근할 때 해당 URL의 접근을 막는 방법, 예를 들어 사용자 인증 정보가 없으면 특정 페이지에 접근하지 못하게 할 때 사용
+ https://joshua1988.github.io/web-development/vuejs/vue-router-navigation-guards/
+ 더 공부하기(캡틴판교님 블로그 글)
 
-인스턴스는 vue가 제공하는 api(기능)과 속성들을 제공하고 있다.
+Axios
+- 뷰에서 권고하는 HTTP 통신 라이브러리
+- Promise(자바스크립트의 비동기 처리 패턴) 기반 HTTP 통신 라이브러리
+- 과거에 vue resource라는 뷰 공식 HTTP 통신 라이브러리가 있었으나 현재는 vue 공식 라이브러리에서 제외 됨
 
+자바스크립트의 비동기 처리 패턴
+1. callback
+2. promise
+3. promise + generator
+4. async & await
 
-뷰 컴포넌트 - 화면의 영역을 구분하여 개발할 수 있는 기능 (재사용성)
+자바스크립트 비동기 처리와 콜백 함수
+https://joshua1988.github.io/web-development/javascript/javascript-asynchronous-operation/
 
-컴포넌트 통신 :
-	상위에서 하위로 데이터 내려줌, 프롭스 속성
-	하위에서 상위로 이벤트 올려줌, 이벤트 발생
-- MVC 패턴의 문제점 : 데이터들 간의 관계가 복잡해지면 특정 데이터가 변경 시 그로 인해 버그가 발생하면 추적 하기가 어렵다.
-- 데이터의 흐름을 추적할 수 있다. 데이터는 항상 위에서 아래로(Props), 이벤트는 항상 아래에서 위로(Event) 올라가기 때문이다.
+자바스크립트 Promise
+https://joshua1988.github.io/web-development/javascript/promise-for-beginners/
 
-props 사용법
- v-bind:프롭스 속성 이름="상위 컴포넌트의 데이터 이름"
+자바스크립트 async & await
+https://joshua1988.github.io/web-development/javascript/js-async-await/
+
+HTTP 서비스 브라우저-서버간 동작 과정
+1. 브라우저(클라이언트)에서 서버로 HTTP 요청
+2. 서버에서 특정 백엔드 로직으로 DB에서 데이터를 가져옴
+3. 가져온 데이터를 서버에서 특정 백엔드 로직으로 브라우저(클라이언트)로 HTTP 응답
