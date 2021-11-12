@@ -4,8 +4,8 @@
 뷰 라우터
 - 싱글 페이지 앱을 쉽게 만들 수 있도록 여러 기능이 포함된 vue 공식 라이브러리
 - 네비게이션 가드 : 특정 URL에 접근할 때 해당 URL의 접근을 막는 방법, 예를 들어 사용자 인증 정보가 없으면 특정 페이지에 접근하지 못하게 할 때 사용
- https://joshua1988.github.io/web-development/vuejs/vue-router-navigation-guards/
- 더 공부하기(캡틴판교님 블로그 글)
+- https://joshua1988.github.io/web-development/vuejs/vue-router-navigation-guards/
+
 
 Axios
 - 뷰에서 권고하는 HTTP 통신 라이브러리
@@ -19,13 +19,13 @@ Axios
 4. async & await
 
 자바스크립트 비동기 처리와 콜백 함수
-https://joshua1988.github.io/web-development/javascript/javascript-asynchronous-operation/
+- https://joshua1988.github.io/web-development/javascript/javascript-asynchronous-operation/
 
 자바스크립트 Promise
-https://joshua1988.github.io/web-development/javascript/promise-for-beginners/
+- https://joshua1988.github.io/web-development/javascript/promise-for-beginners/
 
 자바스크립트 async & await
-https://joshua1988.github.io/web-development/javascript/js-async-await/
+- https://joshua1988.github.io/web-development/javascript/js-async-await/
 
 HTTP 서비스 브라우저-서버간 동작 과정
 1. 브라우저(클라이언트)에서 서버로 HTTP 요청
