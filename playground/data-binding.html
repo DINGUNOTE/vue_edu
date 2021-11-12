@@ -12,13 +12,13 @@
 
         <p v-bind:id="uuid" v-bind:class="name">{{ num }}</p>
         <p>{{ doubleNum }}</p>
-        <div v-if="loading">
+        <div v-if="loading"> <!-- false일 때 DOM에서 아예 제거해버린다. -->
             Loading...
         </div>
         <div v-else>
             test user has been logged in
         </div>
-        <div v-show="loading">
+        <div v-show="loading"> <!-- false일 때 DOM에서 존재, display: none 상태-->
             Loading...
         </div>
     </div>
