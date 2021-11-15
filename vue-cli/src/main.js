@@ -1,20 +1,8 @@
 import Vue from 'vue'
-import App from './App.vue'
+import App from './App.vue' // 컴포넌트 파일을 다른 파일로 부터 불러옴
 
 Vue.config.productionTip = false
 
-// var App = {
-//   template: '<div>app</div>'
-// }
-
 new Vue({
   render: h => h(App),
-  // components: {
-  //   'app': App
-  // }
 }).$mount('#app')
-
-// new Vue({
-//   el: '#app',
-//   render: h => h(App),
-// })

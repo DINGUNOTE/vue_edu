@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Watch vs Cumputed</title>
+</head>
+<body>
+    <div id="app">
+        {{ num }}
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script>
+        new Vue({
+            el: '#app',
+            data: {
+                num: 10
+            },
+            // 단순한 값의 계산, validation에 주로 사용
+            computed: {
+                doubleNum: function(){
+                    return this.num * 2;
+                }
+            },
+            // 주로 무거운 로직에 사용 됨. 
+            watch: {
+                num: function(newValue, oldValue){ // 새 값(바뀐 값, 갱신된 값), 이전 값
+                    this.fetchUserByNumber(newValue);
+                }
+            },
+            methods: {
+                fetchUserByNumber: function(num) {
+                    console.log(num);
+                    // axios.get(num);
+                }
+            }
+        })
+    </script>
+</body>
+</html>
