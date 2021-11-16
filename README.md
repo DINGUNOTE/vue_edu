@@ -13,3 +13,7 @@
    > 뷰 디렉티브 ( v- 로 시작하는 html 속성으로 되어있다. 여러 기능들을 가지고 있다.)
 - Vue CLI : 프로젝트 생성을 할 때 명령어를 이용해서 생성하는 방식
 - 싱글 파일 컴포넌트 : Vue CLI안에서 제공되는 .vue파일
+
+
+
+출처: https://www.inflearn.com/course/Age-of-Vuejs/dashboard
