@@ -16,4 +16,4 @@
 
 
 
-출처: https://www.inflearn.com/course/Age-of-Vuejs/dashboard
+출처: https://www.inflearn.com/course/Age-of-Vuejs/
